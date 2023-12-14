@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/flSelectDateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.BookWorkStationFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:id="@+id/llSelectDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCallBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/back_arrow">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/select_date_slot"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#EFE9E9" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCalander"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                tools:listitem="@layout/calendar_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EFE9E9"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#f0f5ff"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#f0f5ff"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#3C54DD"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#f0f5ff"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_backgrund"
+                        android:backgroundTint="#e3e3e3"
+                        android:gravity="center"
+                        android:text=" 05:00PM-06:00PM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_backgrund"
+                android:backgroundTint="#5167EB"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="15sp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>
